@@ -7,5 +7,9 @@ def my_find(collection)
     final_collection << yield(collection[idx])
   idx += 1
   end
-  
+  if final_collection.detect(true)
+    true
+  else
+    false
+  end
 end
